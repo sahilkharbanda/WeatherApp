@@ -1,0 +1,32 @@
+<html>
+
+<head>
+  <link rel="stylesheet" href="/css/style.css">
+  <link rel="stylesheet" href="/css/bootstrap.min.css">
+  
+</head>
+
+<body>
+  <div class="MainContainer">
+    {{>header}}
+    <div class="main-content">
+      <div class="row">
+        <div class="col-md-6">
+          <form>
+            <div class="form-group">
+              <input type="text" placeholder="Location" class="form-control" id="searhValue">
+            </div>
+            <button class="btn btn-primary">Search</button>
+            <br></br>
+            <p id="messageOne"></p>
+            <p id="messageTwo"></p>
+          </form>
+        </div>
+      </div>
+    </div>
+    {{>footer}}
+  </div>
+  <script type="text/javascript" src="/scripts/app.js"></script>
+</body>
+
+</html>

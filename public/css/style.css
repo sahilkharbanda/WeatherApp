@@ -1,0 +1,30 @@
+
+
+.MainContainer{
+    margin-left: 5% !important;
+    margin-right: 5% !important;
+    border: 1px solid #d6d6d6;
+    border-radius: 5px;
+    padding: 26px 19px;
+    background-color: whitesmoke !important;
+}
+header{
+    margin-bottom: 48px;
+}
+
+.main-content{
+    flex-grow: 1;
+}
+
+header a {
+    text-decoration: none;
+    color:#888888;
+    margin-right: 16px;
+}
+
+footer{
+    color: #888888;
+    border-top: 1px solid #eeeeee;
+    margin-top: 16px;
+    padding: 16px 0;
+}
