@@ -13,8 +13,8 @@ const getLocationMap = (locationName, callback) => {
             callback('Unable to find the location. Try another location. ', undefined);
         }else{
             callback(undefined, { 
-                latitude: response.body.features[0].center[0],
-                longitude: response.body.features[0].center[1],
+                longitude: response.body.features[0].center[0],
+                lattitude: response.body.features[0].center[1],
                 location : response.body.features[0].place_name
             });
               

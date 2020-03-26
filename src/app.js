@@ -42,13 +42,13 @@ app.get('/weather', (req, res) => {
         })
     }
     else {
-        GeoMap.getLocationMap(req.query.address, (error, { latitude, longitude, location } = {}) => {
+        GeoMap.getLocationMap(req.query.address, (error, { longitude, lattitude, location } = {}) => {
             if (error) {
                 return res.send({
                     error: error
                 });
             }
-            foreCast.getForeCast(latitude, longitude, (error, forecastedData) => {
+            foreCast.getForeCast(lattitude, longitude, (error, forecastedData) => {
                 if (error) {
                     return res.send({
                         error: error

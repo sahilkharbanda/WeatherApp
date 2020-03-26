@@ -1,5 +1,6 @@
 const request = require('request');
 getForeCast = (lattitude,longitude,callback)=>{
+    
     const url = 'https://api.darksky.net/forecast/066285b2dab641e919df85c1d6aff7ee/'+lattitude+','+ longitude +'';
     const options = {
         url: url,
